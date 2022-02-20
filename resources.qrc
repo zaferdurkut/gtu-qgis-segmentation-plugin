@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/gtu_segmentation" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
