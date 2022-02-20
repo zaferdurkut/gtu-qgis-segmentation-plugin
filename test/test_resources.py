@@ -8,14 +8,13 @@
 
 """
 
-__author__ = 'durkutzafer@gmail.com'
-__date__ = '2022-02-20'
-__copyright__ = 'Copyright 2022, Zafer Durkut'
+__author__ = "durkutzafer@gmail.com"
+__date__ = "2022-02-20"
+__copyright__ = "Copyright 2022, Zafer Durkut"
 
 import unittest
 
 from qgis.PyQt.QtGui import QIcon
-
 
 
 class GTUSegmentationDialogTest(unittest.TestCase):
@@ -31,14 +30,12 @@ class GTUSegmentationDialogTest(unittest.TestCase):
 
     def test_icon_png(self):
         """Test we can click OK."""
-        path = ':/plugins/GTUSegmentation/icon.png'
+        path = ":/plugins/GTUSegmentation/icon.png"
         icon = QIcon(path)
         self.assertFalse(icon.isNull())
+
 
 if __name__ == "__main__":
     suite = unittest.makeSuite(GTUSegmentationResourcesTest)
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
-
-
-

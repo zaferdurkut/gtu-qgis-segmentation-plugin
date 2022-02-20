@@ -10,7 +10,7 @@
    </rect>
   </property>
   <property name="windowTitle" >
-   <string>GTU Segmentation</string>
+   <string>Multiple Raster Segmentation with K-Means</string>
   </property>
   <widget class="QDialogButtonBox" name="button_box" >
    <property name="geometry" >

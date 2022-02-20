@@ -8,9 +8,9 @@
 
 """
 
-__author__ = 'durkutzafer@gmail.com'
-__date__ = '2022-02-20'
-__copyright__ = 'Copyright 2022, Zafer Durkut'
+__author__ = "durkutzafer@gmail.com"
+__date__ = "2022-02-20"
+__copyright__ = "Copyright 2022, Zafer Durkut"
 
 import unittest
 
@@ -19,6 +19,7 @@ from qgis.PyQt.QtGui import QDialogButtonBox, QDialog
 from gtu_segmentation_dialog import GTUSegmentationDialog
 
 from utilities import get_qgis_app
+
 QGIS_APP = get_qgis_app()
 
 
@@ -48,8 +49,8 @@ class GTUSegmentationDialogTest(unittest.TestCase):
         result = self.dialog.result()
         self.assertEqual(result, QDialog.Rejected)
 
+
 if __name__ == "__main__":
     suite = unittest.makeSuite(GTUSegmentationDialogTest)
     runner = unittest.TextTestRunner(verbosity=2)
     runner.run(suite)
-

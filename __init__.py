@@ -33,4 +33,5 @@ def classFactory(iface):  # pylint: disable=invalid-name
     """
     #
     from .gtu_segmentation import GTUSegmentation
+
     return GTUSegmentation(iface)
